@@ -34,7 +34,7 @@ export const producers = [
       'https://russkaja-skazka.ru/wp-content/uploads/2017/06/gorod-masterov-film-skazka-1965-smotret-detskiy.jpg',
       'https://upload.wikimedia.org/wikipedia/ru/8/87/%D0%9E%D0%B1%D0%BB%D0%BE%D0%B6%D0%BA%D0%B0_DVD_%D1%84%D0%B8%D0%BB%D1%8C%D0%BC%D0%B0_%C2%AB%D0%9F%D0%BE%D0%BB%D1%91%D1%82_%D0%B2_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D1%83_%D1%87%D1%83%D0%B4%D0%BE%D0%B2%D0%B8%D1%89%C2%BB_%28%D0%A1%D0%A1%D0%A1%D0%A0%2C_1986%29.jpg',
       'https://i.ytimg.com/vi/xUtIGCxOXTU/hqdefault.jpg'],
-    mapPoints: [],
+    mapPoints: [[55.800361, 37.528653], [55.834945, 37.637390], [55.833028, 37.639078], [55.767857, 37.550841]],
   },
   {
     name: 'Гайдук Станислав Аркадьевич',
@@ -71,7 +71,7 @@ export const producers = [
     galleryUrls: ['https://www.sb.by/upload/resize_cache/slam.image/iblock/ae1/ae1a45b387c19fb0f7949cfb0d9b3546.jpg',
       'http://media7.veleto.ru/media/files/s2/uh/vu/supermen-ponevole-ili-erotiche.jpg',
       'https://i.ytimg.com/vi/JVfZmVq0uyY/maxresdefault.jpg'],
-    mapPoints: [],
+    mapPoints: [[55.835472, 37.637629], [53.974114, 28.754552], [53.943885, 27.685697], [54.090180, 30.768542]],
   },
   {
     name: 'Рубинчик Валерий Давидович',
@@ -110,7 +110,7 @@ export const producers = [
       'https://3.bp.blogspot.com/-sT2lrEwOe4o/WZL-F-ACjdI/AAAAAAAAK_s/ESPqTAS2FtIXFfhWR0D4rna5q3FRjevCwCLcBGAs/s1600/%25D0%259D%25D0%25B0%25D0%25BD%25D0%25BA%25D0%25B8%25D0%25BD%25D1%2581%25D0%25BA%25D0%25B8%25D0%25B9%2B%25D0%25BF%25D0%25B5%25D0%25B7%25D0%25B0%25D0%25B6-2.jpg',
       'http://media7.veleto.ru/media/files/s3/xi/ph/nankinskij-pejzazh-scene-1.jpg',
       'https://www.kino-teatr.ru/movie/kadr/2984/350112.jpg'],
-    mapPoints: [],
+    mapPoints: [[53.927428, 27.629940], [55.722345, 37.532421], [55.835472, 37.637629]],
   },
   {
     name: 'Трофименко Елена Николаевна',
@@ -146,7 +146,7 @@ export const producers = [
       'http://media7.veleto.ru/media/files/s4/me/bv/padenie-vverh-scene-2.png',
       'http://i5.imageban.ru/out/2014/08/02/0d579124eed8fc7d17188c8cf2fd178b.jpg',
       'https://st.kp.yandex.net/images/film_iphone/iphone360_788112.jpg'],
-    mapPoints: [],
+    mapPoints: [[53.927428, 27.629940]],
   },
   {
     name: 'Курейчик Андрей Владимирович',
@@ -200,6 +200,6 @@ export const producers = [
       'https://cdn11.img.sputnik.by/images/103580/82/1035808248.jpg',
       'http://www.belgazeta.by/get_img?ImageWidth=728&ImageId=12831',
       'https://euroradio.fm/sites/default/files/styles/gallery_main/public/article/miniatures/2017/01/kurejczyk-4.jpg?itok=PQ7DfKwY'],
-    mapPoints: [],
+    mapPoints: [[53.9453, 27.6913], [53.894097, 27.548895], [55.760258, 37.613100], [53.747764, 28.011099]],
   },
 ];
