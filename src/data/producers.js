@@ -1,5 +1,6 @@
 export const producers = [
   {
+    id: 0,
     name: 'Бычков Владимир Сергеевич',
     dates: '5 января 1929 — 24 апреля 2004',
     photoUrl: 'https://upload.wikimedia.org/wikipedia/ru/thumb/3/31/%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%BC%D0%B8%D1%80_%D0%91%D1%8B%D1%87%D0%BA%D0%BE%D0%B2.jpg/749px-%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%BC%D0%B8%D1%80_%D0%91%D1%8B%D1%87%D0%BA%D0%BE%D0%B2.jpg',
@@ -37,6 +38,7 @@ export const producers = [
     mapPoints: [[55.800361, 37.528653], [55.834945, 37.637390], [55.833028, 37.639078], [55.767857, 37.550841]],
   },
   {
+    id: 1,
     name: 'Гайдук Станислав Аркадьевич',
     dates: '10 января 1945 - 3 октября 2017',
     photoUrl: 'https://upload.wikimedia.org/wikipedia/ru/3/32/%D0%A1%D1%82%D0%B0%D0%BD%D0%B8%D1%81%D0%BB%D0%B0%D0%B2_%D0%93%D0%B0%D0%B9%D0%B4%D1%83%D0%BA.jpg',
@@ -74,6 +76,7 @@ export const producers = [
     mapPoints: [[55.835472, 37.637629], [53.974114, 28.754552], [53.943885, 27.685697], [54.090180, 30.768542]],
   },
   {
+    id: 2,
     name: 'Рубинчик Валерий Давидович',
     dates: '17 апреля 1940 - 2 марта 2011',
     photoUrl: 'https://upload.wikimedia.org/wikipedia/ru/a/a8/Rubinchik_vd.jpg',
@@ -113,6 +116,7 @@ export const producers = [
     mapPoints: [[53.927428, 27.629940], [55.722345, 37.532421], [55.835472, 37.637629]],
   },
   {
+    id: 3,
     name: 'Трофименко Елена Николаевна',
     dates: '20 марта 1964 - наст.',
     photoUrl: 'https://upload.wikimedia.org/wikipedia/commons/8/83/Yelena_Trofimenko_%28Nov._2011%29_INet_%282%29.jpg',
@@ -149,6 +153,7 @@ export const producers = [
     mapPoints: [[53.927428, 27.629940]],
   },
   {
+    id: 4,
     name: 'Курейчик Андрей Владимирович',
     dates: '14 января 1980 - наст.',
     photoUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Kureichik.jpg/267px-Kureichik.jpg',
