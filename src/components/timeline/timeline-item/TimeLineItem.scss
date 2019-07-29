@@ -1,0 +1,15 @@
+/* fix this after adding main scss*/
+$primary-color: #663399;
+$secondary-color: #ddd;
+
+.timeline-item-dateinner {
+  background: $primary-color;
+}
+
+.timeline:before {
+  color: $secondary-color;
+}
+
+.title:before {
+  color: $secondary-color; 
+}

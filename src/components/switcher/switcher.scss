@@ -1,0 +1,22 @@
+$color: blue;
+$active-color: white;
+
+.language {
+  list-style: none;
+  
+  li {
+    display: inline;
+  }
+
+  button {
+    border: none;
+  }
+}
+
+.btn-lang {
+  background: $color;
+}
+
+.active-btn-lang {
+  background: $active-color;
+}
