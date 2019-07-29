@@ -1,12 +1,12 @@
 import React from 'react';
 import { Language } from '@wapps/gatsby-plugin-i18next';
 
-import './switcher.css'
+import './switcher.scss'
 
 const Switcher = ({ changeLng, lng, availableLngs }) => (
-  <ul style={{ listStyle: 'none' }}>
+  <ul className="language">
     {availableLngs.map(value => (
-      <li key={value} style={{ display: 'inline' }}>
+      <li key={value}>
         <button className = {(value === lng) ? 'active-btn-lang': 'btn-lang'}
           onClick={() => changeLng(value)}
         >
