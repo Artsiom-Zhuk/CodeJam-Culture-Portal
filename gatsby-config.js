@@ -26,6 +26,23 @@ module.exports = {
         display: `minimal-ui`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/locale`,
+        name: `locale`,
+      },
+    },
+    {
+      resolve: '@wapps/gatsby-plugin-i18next',
+      options: {
+        availableLngs: ['en', 'ru', 'by'],
+        fallbackLng: 'en',
+        i18nextOptions: {
+          debug: false,
+        },
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
