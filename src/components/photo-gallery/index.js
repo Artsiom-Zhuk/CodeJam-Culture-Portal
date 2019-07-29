@@ -21,20 +21,20 @@ function PhotosGallery({producer}) {
 
   return (
     <Layout>
-      <Gallery photos={photosForGallery[producer.idPhotoGallery]} onClick={openLightbox} />
+      <Gallery photos={ photosForGallery[producer.idPhotoGallery] } onClick={ openLightbox } />
       <ModalGateway>
-        {viewerIsOpen ? (
-          <Modal onClose={closeLightbox}>
+        { viewerIsOpen ? (
+          <Modal onClose={ closeLightbox }>
             <Carousel
-              currentIndex={currentImage}
-              views={photosForGallery[producer.idPhotoGallery].map(item => ({
+              currentIndex={ currentImage }
+              views={ photosForGallery[producer.idPhotoGallery].map(item => ({
                 ...item,
                 srcset: item.srcSet,
                 caption: item.title
-              }))}
+              })) }
             />
           </Modal>
-        ) : null}
+        ) : null }
       </ModalGateway> 
    </Layout>
   );

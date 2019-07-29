@@ -9,9 +9,7 @@ class Gallery extends React.Component {
   render() {
     return (
       <Translation>
-        {t => (
-          <PhotosGallery producer={producers[0]}/>
-        )}
+        { t => <PhotosGallery producer={ producers[0] }/> }
       </Translation>
     )
   }
