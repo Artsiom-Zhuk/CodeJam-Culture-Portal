@@ -1,0 +1,27 @@
+.developers-container{
+  border: solid black 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.developers-item{
+  border: solid black 1px;
+  display: flex;
+  width: 20rem;
+  flex-direction: row;
+  flex-wrap: wrap;  
+}
+
+.developers-img{
+  width:5rem;
+  margin: 1rem;
+}
+
+.github-logo{
+  background: url('../../images/developers/github.svg') no-repeat left top;
+  background-size: 100%;
+  display: inline-block;
+  height: 1rem;  
+  width: 1rem;
+}
