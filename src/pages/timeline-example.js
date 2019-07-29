@@ -1,25 +1,24 @@
 import React from "react"
+import { TimeLineFull } from '../components/timeline/timeLine';
+import { graphql } from 'gatsby';
 import { Translation } from 'react-i18next';
 import { Link, withI18next } from '@wapps/gatsby-plugin-i18next';
-// import { TimeLineFull } from '../components/timeline/timeLine';
 
 import Layout from "../components/layout-example/layout"
 
-const IndexPage = () => (
+const timeLinePage = () => (
   <Translation>
     {t => (
       <Layout>
-        <h1>{t('Film directors of Belarus')}</h1>
-        <p>{t('Welcome to your new Gatsby site.')}</p>
-        <p>{t('Now go build something great.')}</p>
-        <Link to="/page-2/">{t('Go to page 2')}</Link>
-        <Link to="/timeline-example/">{t(' Timeline')}</Link>
+        <h1>{t('Hi from the timeline page')}</h1>
+        <Link to="/">{t('Go back to the homepage')}</Link>
+        <TimeLineFull id={ 0 }/>
       </Layout>
     )}
   </Translation>
 );
 
-export default withI18next()(IndexPage);
+export default withI18next()(timeLinePage);
 
 export const query = graphql`
   query($lng: String!) {
@@ -28,3 +27,4 @@ export const query = graphql`
     }
   }
 `;
+
