@@ -1,11 +1,13 @@
 import React from "react"
 import { Link } from "gatsby"
 import producers from "../data/producers"
+import VideoWidget from "../components/videoWidget"
 
 import Layout from "../components/layout-example/layout"
 const IndexPage = () => (
   <Layout>
     <h1>Hi people</h1>
+    <VideoWidget data={producers} />
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
