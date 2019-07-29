@@ -7,7 +7,8 @@ const useStyles = makeStyles({
     margin: 10,
   },
   bigAvatar: {
-    margin: "0.5rem",
+    margin: "0.2rem",
+    marginBottom: "0rem",
     width: "5rem",
     height: "5rem",
   },

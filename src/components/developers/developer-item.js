@@ -2,18 +2,18 @@ import React from 'react';
 import "./developers.css"
 import ImageAvatars from './developer-image';
 
-export const Developeritem = (props) => (
+export const DeveloperItem = (props) => (
   <>
     <div className="developers-img">
     <ImageAvatars src={props.image} />
     </div>
     <div className="developers-info">
-      <h3>{props.name}</h3>
+      <h3 className="developers-name">{props.name}</h3>
       <div>
         <span className="github-logo"></span>
-        <a 
+        <a className="github-link"
           href={props.github} 
-          target="_blank">: 
+          target="_blank"> 
           {props.githubName}
         </a>
       </div>

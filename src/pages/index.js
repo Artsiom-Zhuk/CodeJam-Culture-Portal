@@ -2,7 +2,6 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout-example/layout";
-import { Developers } from '../components/developers'
 
 const IndexPage = () => (
   <Layout>
