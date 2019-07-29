@@ -1,8 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
+import producers from "../data/producers"
 
 import Layout from "../components/layout-example/layout"
-
 const IndexPage = () => (
   <Layout>
     <h1>Hi people</h1>
