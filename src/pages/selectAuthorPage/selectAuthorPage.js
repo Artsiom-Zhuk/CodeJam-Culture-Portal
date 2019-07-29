@@ -2,7 +2,7 @@ import React from "react"
 
 class SelectAuthorsPage extends React.Component{
     render(){
-       return <h1>1</h1>
+       return <h2>1</h2>
     }
 }
 

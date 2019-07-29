@@ -1,0 +1,22 @@
+.navBar {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navBar a {
+      color: #686868;
+      text-decoration: none;
+  }
+  .navBar a:hover {
+    color: #1daeec;
+    transition: all 0.3s
+  }
+  .navMainCont{    
+    background: #333333;
+  }
+
+h1{
+    color:white;
+}
