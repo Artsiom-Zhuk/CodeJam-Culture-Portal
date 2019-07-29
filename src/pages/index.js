@@ -1,10 +1,9 @@
 import React from "react"
 import { Translation } from 'react-i18next';
-import { Link, withI18next } from '@wapps/gatsby-plugin-i18next';
+import { withI18next } from '@wapps/gatsby-plugin-i18next';
 // import { TimeLineFull } from '../components/timeline/timeLine';
-import LandingPage from './landingpage/landingPage';
+import LandingPage from './landingPage/landingPage';
 
-// import Layout from "../components/layout-example/layout"
 
 const IndexPage = () => (
   <Translation>

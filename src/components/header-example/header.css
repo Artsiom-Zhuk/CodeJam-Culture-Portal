@@ -1,3 +1,6 @@
+body{
+    margin:0
+}
 .navBar {
     width: 60%;
     margin: auto;
@@ -15,8 +18,9 @@
   }
   .navMainCont{    
     background: #333333;
+    display: flex;
   }
 
 h1{
-    color:white;
+    color: white;
 }

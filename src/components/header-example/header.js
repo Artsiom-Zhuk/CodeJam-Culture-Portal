@@ -11,21 +11,14 @@ const Header = ({ siteTitle }) => (
       RSS-codejam-5
       </h1>
       <div className='navBar'>
-      <Link to="/page-2/">{('ON THE MAIN')}</Link>
-      <Link to="/selectAuthorPage/selectAuthorPage">{('SelectAuthorPage')}</Link>
-      <Link to="/authorPage/authorPage">{('AuthorPage')}</Link>
+      <Link to="/">{('On The Main')}</Link>
+      <Link to="/selectDirectorPage/selectDirectorPage">{('Select Director Page')}</Link>
+      <Link to="/directorPage/directorPage">{('Director Page')}</Link>
       </div>
     </div>
     <Switcher />
   </header>
 )
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Header
