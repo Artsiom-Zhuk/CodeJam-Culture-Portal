@@ -7,23 +7,30 @@ import producers from '../../data/producers';
 
 
 class SelectDirectorPage extends React.Component{
-    directorListFunc(){
-        // const director = producers.map((item)=>item.name)
-        return  console.log(producers)
-    }
+    directorListFunc = () => {
+        const directorInfo = producers.map((item, index)=>{
+          return (<li key={index}>
+                    <h2>{item.name}</h2>
+                    <img src={item.photoUrl} width="189" height="255" alt='directroPhoto'/>
+                  </li>)
+          })
+          return <ul>{directorInfo}</ul>
+        }; 
+    
 
     render(){
-      {this.directorListFunc()}
         return (
             <Translation>
             {t => (
             <>
             <Header/>
+            {this.directorListFunc()}
+
             </>
             )}
         </Translation>
           )
-    }
+    };
 
 }
 
