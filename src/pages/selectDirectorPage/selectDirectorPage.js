@@ -13,9 +13,15 @@ class SelectDirectorPage extends React.Component{
     directorListFunc = () => {
         const directorInfo = producers.map((item, index)=>{
           return (<li key={index}>
-                    <h2>{item.name}</h2>
-                    <img src={item.photoUrl} width="189" height="255" alt='directroPhoto'/>
-                    <Link to={`/directorPage/directorPage/`} state={{ id: index }}>{('Director Page')}</Link>
+                    <Translation>
+                      {t => (
+                         <>
+                        <h2>{t(item.name)}</h2>
+                        <img src={item.photoUrl} width="189" height="255" alt='directroPhoto'/>
+                        <Link to={`/directorPage/directorPage/`} state={{ id: index }}>{('Director Page')}</Link>
+                        </>
+                      )}
+                    </Translation>
                   </li>)
           })
           return <ul>{directorInfo}</ul>
@@ -23,16 +29,12 @@ class SelectDirectorPage extends React.Component{
     
 
     render(){
-        return (
-            <Translation>
-            {t => (
-            <>
-            <Header/>
-            {this.directorListFunc()}
-            </>
-            )}
-        </Translation>
-          )
+      return (
+        <>
+        <Header/>
+        {this.directorListFunc()}
+        </>
+      )
     };
 
 }
