@@ -1,4 +1,4 @@
-const producersEn = [
+const producers = [
   {
     id: 0,
     name: 'Bychkov Vladimir Siarheevich',
@@ -209,4 +209,4 @@ const producersEn = [
   },
 ];
 
-export default producersEn;
+export default producers;
