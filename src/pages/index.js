@@ -4,7 +4,6 @@ import { withI18next } from '@wapps/gatsby-plugin-i18next';
 // import { TimeLineFull } from '../components/timeline/timeLine';
 import LandingPage from './landingPage/landingPage';
 
-
 const IndexPage = () => (
   <Translation>
     {t => (
