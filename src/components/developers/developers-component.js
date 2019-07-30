@@ -1,6 +1,6 @@
 import React from 'react';
 
-import "./developers.css"
+import "./developers.scss"
 import { DeveloperItem } from "./developer-item"
 import {developersList} from '../../data/developers-data'
 

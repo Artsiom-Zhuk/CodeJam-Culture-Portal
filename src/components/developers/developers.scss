@@ -1,16 +1,16 @@
 .developers-container{  
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 
 .developers-item{
-  border-left: solid rebeccapurple 1px; 
+  border-left: solid #1daeec48 4px;  
   display: flex;  
   flex-direction: row;
   flex-wrap: wrap; 
-  margin-top:0.4rem;
+  margin-top:1rem;
   width: 20rem; 
 }
 
@@ -38,13 +38,15 @@
   font-size: 1rem;
   margin-left: 0.5rem;
   text-decoration: none;
-  transition: color 1s ease;
+  transition: color 0.6s ease;
 }
 
 .github-link:hover{
-  color: rebeccapurple;  
+  color: #1daeec;  
 }
 
 .team-section{
-  border-top: solid rebeccapurple 1px;
+  border-top: solid #1daeec 1px;
+  width:60%;
+  margin: auto;
 }
