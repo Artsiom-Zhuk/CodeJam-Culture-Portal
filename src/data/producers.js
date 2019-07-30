@@ -1,4 +1,4 @@
-export const producers = [
+const producers = [
   {
     id: 0,
     idPhotoGallery: 'BVS',
@@ -193,5 +193,6 @@ export const producers = [
     ],
     videoUrl: 'https://www.youtube.com/watch?v=ut2keCmDV5s',
     mapPoints: [[53.9453, 27.6913], [53.894097, 27.548895], [55.760258, 37.613100], [53.747764, 28.011099]],
-  }
+  },
 ];
+export default producers
