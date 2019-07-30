@@ -1,5 +1,6 @@
 import React from 'react';
 import { TimelineItem }  from 'vertical-timeline-component-for-react';
+import './TimeLineItem.scss';
 
 export const TimeItem = ({ biography }) => {
   

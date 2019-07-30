@@ -20,7 +20,7 @@ function PhotosGallery({producer}) {
   };
 
   return (
-    <Layout>
+    <>
       <Gallery photos={ photosForGallery[producer.idPhotoGallery] } onClick={ openLightbox } />
       <ModalGateway>
         { viewerIsOpen ? (
@@ -36,7 +36,7 @@ function PhotosGallery({producer}) {
           </Modal>
         ) : null }
       </ModalGateway> 
-   </Layout>
+    </>
   );
 }
 
