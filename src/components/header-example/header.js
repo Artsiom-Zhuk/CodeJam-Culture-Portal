@@ -13,7 +13,6 @@ const Header = ({ siteTitle }) => (
       <div className='navBar'>
       <Link to="/">{('On The Main')}</Link>
       <Link to="/selectDirectorPage/selectDirectorPage">{('Select Director Page')}</Link>
-      <Link to="/directorPage/directorPage">{('Director Page')}</Link>
       </div>
     </div>
     <Switcher />
