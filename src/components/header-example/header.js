@@ -1,42 +1,23 @@
-import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import { Link } from '@wapps/gatsby-plugin-i18next';
+import Switcher from './../switcher/switcher';
+import './header.css'
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
+  <header>
+    <div className='navMainCont'>
+      <h1>
+      RSS-codejam-5
       </h1>
+      <div className='navBar'>
+      <Link to="/">{('On The Main')}</Link>
+      <Link to="/selectDirectorPage/selectDirectorPage">{('Select Director Page')}</Link>
+      </div>
     </div>
+    <Switcher />
   </header>
 )
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Header
