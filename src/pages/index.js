@@ -3,12 +3,14 @@ import { Translation } from 'react-i18next';
 import { withI18next } from '@wapps/gatsby-plugin-i18next';
 // import { TimeLineFull } from '../components/timeline/timeLine';
 import LandingPage from './landingPage/landingPage';
+ import DayProducer from '../components/dayProducer/dayProducer';
 
 const IndexPage = () => (
   <Translation>
     {t => (
         <LandingPage/>
     )}
+    <DayProducer/>
   </Translation>
 );
 
