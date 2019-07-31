@@ -7,6 +7,7 @@ import producers from '../data/producers';
 import Layout from "../components/layout-example/layout"
 import { TimeLineFull } from '../components/timeline/timeLine';
 import PhotosGallery from '../components/photo-gallery';
+import VideoWidget from '../components/videoWidget';
 
 const ProducerPage = (props) => {
   const producer = producers[props.location.state.id];
@@ -17,6 +18,7 @@ const ProducerPage = (props) => {
         <h2>{t(producer.name)}</h2>
         <TimeLineFull producer = { producer }/>
         <PhotosGallery producer = { producer }/>
+        <VideoWidget producer = { producer }/>
         
       </Layout>
        )}
