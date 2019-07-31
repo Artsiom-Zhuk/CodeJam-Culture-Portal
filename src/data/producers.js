@@ -195,4 +195,4 @@ const producers = [
   },
 ];
 
-export default producers;
+export default producers

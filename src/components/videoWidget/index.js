@@ -22,10 +22,10 @@ export default class VideoWidget extends React.Component {
       <Fragment>
         <div className = 'text-translate caption videoButton'  onClick={() => {
                 this.toggleVideoPlaying();
-              }}>Посмотреть видео о {this.props.data[0].name}</div>
+              }}>Посмотреть видео о {this.props.producer.name}</div>
         {isVideoPlaying && (
        <div className='player-wrapper'>
-          <ReactPlayer url={this.props.data[0].videoUrl} playing />
+          <ReactPlayer url={this.props.producer.videoUrl} playing />
           <div className='buttonClose' onClick={() => {
                 this.toggleVideoPlaying();}
               }></div>
