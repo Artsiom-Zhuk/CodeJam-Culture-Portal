@@ -1,6 +1,7 @@
 import React from 'react';
-import "./developers.scss"
+
 import ImageAvatars from './developer-image';
+import "./developers.scss"
 
 export const DeveloperItem = (props) => (
   <>

@@ -36,16 +36,15 @@ export const developersList = [
   },
   {
     id: 5,
-    name: 'Mikita Kauryha',
-    github: 'https://github.com/koverboy',
-    githubName: 'koverboy',
-    photoUrl: 'https://avatars2.githubusercontent.com/u/47757195?s=460&v=4',    
-  },
-  {
-    id: 6,
     name: 'Volha Zakharava',
     github: 'https://github.com/hxprojects',
     githubName: 'hxprojects',
     photoUrl: 'https://avatars0.githubusercontent.com/u/47758225?s=460&v=4',    
+  },
+  {
+    id: 6,name: 'Mikita Kauryha',
+    github: 'https://github.com/koverboy',
+    githubName: 'koverboy',
+    photoUrl: 'https://avatars2.githubusercontent.com/u/47757195?s=460&v=4',       
   },
 ]

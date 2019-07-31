@@ -1,12 +1,11 @@
 .developers-container{  
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
-.developers-item{
-  border-left: solid #1daeec48 4px;  
+.developers-item{  
   display: flex;  
   flex-direction: row;
   flex-wrap: wrap; 
@@ -46,7 +45,16 @@
 }
 
 .team-section{
-  border-top: solid #1daeec 1px;
-  width:60%;
+  border-top: solid #333333 5px;
+  width:65%;
   margin: auto;
+}
+.team-description{
+  margin-left: 50px;
+  color: #3333339d;
+}
+
+.team-title{
+  margin-left: 20px;
+  text-transform: uppercase;
 }
