@@ -3,6 +3,7 @@ import { Translation } from 'react-i18next';
 import { withI18next } from '@wapps/gatsby-plugin-i18next';
 import Layout from "../components/layout/layout"
 import { Developers } from '../components/developers'
+import '../styles/main.scss';
 
 const IndexPage = () => (
   <Translation>
