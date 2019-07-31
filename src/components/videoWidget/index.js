@@ -1,37 +1,27 @@
-import React, {Fragment} from 'react';
-import ReactPlayer from 'react-player'
+import React from 'react';
+import YouTube from 'react-youtube';
 
 export default class VideoWidget extends React.Component {
-  constructor(props){
-    super(props);
-    this.state = {
-      isVideoPlaying: false
-    }
-  }
-  toggleVideoPlaying (){
-    const { isVideoPlaying } = this.state;
-    this.setState({
-      isVideoPlaying: !isVideoPlaying
-    });
-  }
-
   render() {
-    const {isVideoPlaying} = this.state;
+    const opts = {
+      height: '390',
+      width: '640',
+      playerVars: { // https://developers.google.com/youtube/player_parameters
+        autoplay: 1
+      }
+    };
+    const {videoId} = this.props
     return (
-
-      <Fragment>
-        <div className = 'text-translate caption videoButton'  onClick={() => {
-                this.toggleVideoPlaying();
-              }}>Посмотреть видео о {this.props.data[0].name}</div>
-        {isVideoPlaying && (
-       <div className='player-wrapper'>
-          <ReactPlayer url={this.props.data[0].videoUrl} playing />
-          <div className='buttonClose' onClick={() => {
-                this.toggleVideoPlaying();}
-              }></div>
-        </div>
-      )}
-    </Fragment>
-    )
+      <YouTube
+        videoId={videoId}
+        opts={opts}
+        onReady={this._onReady}
+      />
+    );
+  }
+ 
+  _onReady(event) {
+    // access to player in all event handlers via event.target
+    event.target.pauseVideo();
   }
 }

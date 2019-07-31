@@ -1,10 +1,6 @@
 import React from "react";
 import { YMaps, Map, Placemark } from "react-yandex-maps";
 
-
-
-
-
 const GeoWidget = (props) => {
   const {mapPoints} = props;
   console.log(props)
