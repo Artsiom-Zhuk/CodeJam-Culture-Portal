@@ -1,0 +1,37 @@
+
+.dayProducer {
+  height: 21vmax;
+  width: 21vmax;
+
+  &_image {
+    transition-duration: .2s;
+    height: 20vmax;
+    width: 20vmax;
+  }
+
+  &_bio {
+
+    word-break: break-all;
+    text-align: left;
+    font-size: small;
+    transform: translate(-700px, 300px);
+    transition: all 0.2s ease-in-out;
+  }
+
+}
+
+.dayProducer:hover {
+  .dayProducer_bio {
+
+    display: block;
+    transform: translate(0px, 0px);
+    transition-duration: .2s;
+  }
+
+  .dayProducer_image {
+    transition-duration: .2s;
+    border-radius: 50%;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
+
+}
