@@ -1,22 +1,30 @@
-import React from 'react';
-import { Language } from '@wapps/gatsby-plugin-i18next';
+import PropTypes from 'prop-types';
+import React, { Component } from 'react';
+import { Location } from '@reach/router';
+import { Link } from "gatsby";
+import './switcher.scss';
 
-import './switcher.scss'
+class SomeComponent extends Component {
+  static propTypes = {
+    location: PropTypes.object.isRequired
+  }
 
-const Switcher = ({ changeLng, lng, availableLngs }) => (
-  <ul className="language">
-    {availableLngs.map(value => (
-      <li key={value}>
-        <button className = {(value === lng) ? 'active-btn-lang': 'btn-lang'}
-          onClick={() => changeLng(value)}
-        >
-          {value}
-        </button>
-      </li>
-    ))}
-  </ul>
-);
+  render() {
+    const { location } = this.props;
+    const url = location.pathname.split('/').slice(2).join('/');
+    const id= location.state.id ? location.state.id: 0;
+    return (
+      <ul className="language">
+        <li><Link to={"/ru/".concat(url)} state={{ id: id }} activeClassName="active">RU </Link></li>
+        <li><Link to={"/by/".concat(url)} state={{ id: id }} activeClassName="active">BY </Link></li>
+        <li><Link to={"/en/".concat(url)} state={{ id: id }} activeClassName="active">EN </Link></li>
+      </ul>
+    );
+  }
+}
 
 export default props => (
-  <Language>{lngProps => <Switcher {...props} {...lngProps} />}</Language>
+  <Location>
+    {locationProps => <SomeComponent {...locationProps} {...props} />}
+  </Location>
 );
