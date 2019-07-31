@@ -9,9 +9,10 @@ import GeoWidget from '../../components/geoWidget/geoWidget';
 class DirectorPage extends React.Component{
     directorDescription = () => {
       const id = this.props.location.state.id;
+      const mapPoints = producers[id].mapPoints||[[55.75, 37.57]];
       const info = <>
                     <h2>{producers[id].name}</h2>
-                    <GeoWidget mapCoord = {producers[id].mapPoints}/>
+                    <GeoWidget mapPoints = {mapPoints}/>
                   </>
       return info            
     }
