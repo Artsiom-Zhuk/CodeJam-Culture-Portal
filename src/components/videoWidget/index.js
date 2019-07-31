@@ -12,6 +12,7 @@ export default class VideoWidget extends React.Component {
     };
     const {videoId} = this.props
     return (
+<<<<<<< HEAD
       <YouTube
         videoId={videoId}
         opts={opts}
@@ -23,5 +24,22 @@ export default class VideoWidget extends React.Component {
   _onReady(event) {
     // access to player in all event handlers via event.target
     event.target.pauseVideo();
+=======
+
+      <Fragment>
+        <div className = 'text-translate caption videoButton'  onClick={() => {
+                this.toggleVideoPlaying();
+              }}>Посмотреть видео о {this.props.producer.name}</div>
+        {isVideoPlaying && (
+       <div className='player-wrapper'>
+          <ReactPlayer url={this.props.producer.videoUrl} playing />
+          <div className='buttonClose' onClick={() => {
+                this.toggleVideoPlaying();}
+              }></div>
+        </div>
+      )}
+    </Fragment>
+    )
+>>>>>>> origin/develop
   }
 }
