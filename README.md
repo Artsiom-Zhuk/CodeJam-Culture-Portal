@@ -15,6 +15,8 @@ src/images
 ### git pull 
 take changes that were merged 
 ### git checkout yourbranch
+### git merge develop
+take changes from develop to yourbranch
 ### check the conflicts  
 ### git commit
 ### pull request 
