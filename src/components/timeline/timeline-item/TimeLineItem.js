@@ -1,17 +1,22 @@
 import React from 'react';
 import { TimelineItem }  from 'vertical-timeline-component-for-react';
+import { Translation } from 'react-i18next';
 
-export const TimeItem = ({ biography }) => {
+const TimeItem = ({ biography }) => {
   
   const elements = biography.map((item, index) => {
     return (
-      <TimelineItem
-      key={ index }
-      dateText={ item[0] }
-    >
-      <h3>{ item[0] }</h3>
-      <p>{ item[1] }</p>
-    </TimelineItem>
+      <Translation>
+        { t => (
+            <TimelineItem
+              key={ index }
+              dateText={ item[0] }
+              >
+              <h3>{ item[0] }</h3>
+              <p>{ t(item[1]) }</p>
+            </TimelineItem>
+        )}
+      </Translation>
     );
   });
 
@@ -21,3 +26,5 @@ export const TimeItem = ({ biography }) => {
     </div>
   );
 };
+
+export default TimeItem;
