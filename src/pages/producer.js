@@ -4,7 +4,7 @@ import { graphql } from 'gatsby';
 import { Translation } from 'react-i18next';
 import { withI18next } from '@wapps/gatsby-plugin-i18next';
 import producers from '../data/producers';
-import Layout from "../components/layout-example/layout"
+import Layout from "../components/layout/layout"
 import { TimeLineFull } from '../components/timeline/timeLine';
 import PhotosGallery from '../components/photo-gallery';
 import VideoWidget from '../components/videoWidget';
@@ -20,7 +20,6 @@ const ProducerPage = (props) => {
         <TimeLineFull producer = { producer }/>
         <PhotosGallery producer = { producer }/>
         <VideoWidget producer = { producer }/>
-        
       </Layout>
        )}
     </Translation>

@@ -1,11 +1,10 @@
 import React from "react"
-import Header from '../components/header-example/header';
 import { graphql } from 'gatsby';
 import { Translation } from 'react-i18next';
 import { withI18next } from '@wapps/gatsby-plugin-i18next';
 import producers from '../data/producers';
 import { Link } from '@wapps/gatsby-plugin-i18next';
-
+import Layout from "../components/layout/layout"
 
 class SelectDirectorPage extends React.Component{
   
@@ -29,10 +28,9 @@ class SelectDirectorPage extends React.Component{
 
     render(){
       return (
-        <>
-        <Header/>
-        {this.directorListFunc()}
-        </>
+        <Layout>
+          {this.directorListFunc()}
+        </Layout>
       )
     };
 

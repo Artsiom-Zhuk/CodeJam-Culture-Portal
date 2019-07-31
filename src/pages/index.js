@@ -1,13 +1,16 @@
 import React from "react"
 import { Translation } from 'react-i18next';
 import { withI18next } from '@wapps/gatsby-plugin-i18next';
-// import { TimeLineFull } from '../components/timeline/timeLine';
-import LandingPage from './landingPage/landingPage';
+import Layout from "../components/layout/layout"
+import { Developers } from '../components/developers'
 
 const IndexPage = () => (
   <Translation>
     {t => (
-        <LandingPage/>
+        <Layout>
+          <h2>{t('Главная страница')}</h2>
+          <Developers/>
+        </Layout>
     )}
   </Translation>
 );
