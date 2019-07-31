@@ -1,4 +1,4 @@
-const producersRu = [
+const producers = [
   {
     id: 0,
     idPhotoGallery: 'BVS',
@@ -195,4 +195,4 @@ const producersRu = [
   },
 ];
 
-export default producersRu;
+export default producers;
