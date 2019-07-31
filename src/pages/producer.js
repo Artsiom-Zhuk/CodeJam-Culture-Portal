@@ -10,7 +10,8 @@ import PhotosGallery from '../components/photo-gallery';
 import VideoWidget from '../components/videoWidget';
 
 const ProducerPage = (props) => {
-  const producer = producers[props.location.state.id];
+  const id= (props.location.state.id ? props.location.state.id: 0);
+  const producer = producers[id];
   return (
     <Translation>
       {t => (
