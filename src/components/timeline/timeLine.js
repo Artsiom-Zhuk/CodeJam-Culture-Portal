@@ -1,7 +1,7 @@
 import React from 'react';
 import { Timeline }  from 'vertical-timeline-component-for-react';
 import { TimeItem } from './timeline-item/TimeLineItem';
-import { producers } from '../../data/producers.ru';
+import producers from '../../data/producers';
 import '../timeline/timeline-item/TimeLineItem.scss';
 
 
