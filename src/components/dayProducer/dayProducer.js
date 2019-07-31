@@ -12,8 +12,7 @@ function DayProducer() {
       <a class="dayProducer_link" href='#'><img class="dayProducer_link__image" src={producersEn[ID].photoUrl}/></a>
       <div class="dayProducer_bio">
         <p> {producersEn[ID].name}</p>
-        <p>Date:{producersEn[ID].dates}</p>
-        <p>   {producersEn[ID].workList}</p>
+        <p>{producersEn[ID].dates}</p>
       </div>
     </div>
   )
