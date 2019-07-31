@@ -3,7 +3,7 @@ import { Translation } from 'react-i18next';
 import { withI18next } from '@wapps/gatsby-plugin-i18next';
 
 import PhotosGallery from '../components/photo-gallery/index';
-import { producers } from '../data/producers'
+import producers from '../data/producers';
 
 class Gallery extends React.Component {
   render() {

@@ -5,7 +5,6 @@ import { Translation } from 'react-i18next';
 import { withI18next } from '@wapps/gatsby-plugin-i18next';
 import producers from '../data/producers';
 import { Link } from '@wapps/gatsby-plugin-i18next';
-// import { Link } from 'react-router-dom';
 
 
 class SelectDirectorPage extends React.Component{
