@@ -23,7 +23,6 @@ const ProducerPage = (props) => {
         <VideoWidget videoId = {videoUrl}/>
         <TimeLineFull producer = { producer }/>
         <PhotosGallery producer = { producer }/>
-        <VideoWidget producer = { producer }/>
       </Layout>
        )}
     </Translation>
