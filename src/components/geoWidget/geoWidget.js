@@ -1,18 +1,19 @@
 import React from "react";
-import { YMaps, Map, Placemark } from "react-yandex-maps";
+import { YMaps, Map, Placemark, ZoomControl, FullscreenControl} from "react-yandex-maps";
+import './geoWidget.scss';
 
 const GeoWidget = (props) => {
   const {mapPoints} = props;
-  console.log(props)
   const mapData = {
     center: mapPoints[0],
     zoom: 5,
   };
   const coordinates = mapPoints;
-  console.log(coordinates)
   return(
     <YMaps>
-      <Map defaultState={mapData}>
+      <Map defaultState={mapData} className={'mapContainer'}   >
+      <ZoomControl options={{ float: 'right' }} />
+      <FullscreenControl />
         {coordinates.map((coordinate, index) => <Placemark geometry={coordinate} key={index}/>)}
       </Map>
     </YMaps>

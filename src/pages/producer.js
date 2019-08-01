@@ -19,9 +19,9 @@ const ProducerPage = (props) => {
       {t => (
       <Layout>
         <h2>{t(producer.name)}</h2>
-        <GeoWidget mapPoints = {mapPoints}/>
         <VideoWidget videoId = {videoUrl}/>
         <TimeLineFull producer = { producer }/>
+        <GeoWidget mapPoints = {mapPoints}/>
         <PhotosGallery producer = { producer }/>
       </Layout>
        )}

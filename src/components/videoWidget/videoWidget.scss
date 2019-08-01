@@ -1,0 +1,31 @@
+@import 'node_modules/react-modal-video/scss/modal-video.scss';
+
+
+$color:#663399;
+$active-color: white;
+
+.videoButtonContainer{
+    width: 80%;
+    margin: auto;
+    height: 3em;
+    margin-top: 2%;
+}
+
+.videoButton{
+    background-color: $color;
+    width: 100%;
+    margin: auto;
+    font-size: 1.5em;
+    border: 2px solid white;
+    height: 2em;
+    border-radius: 20%; 
+    border-radius: 25px;
+    transition:  1s;
+    
+}
+
+.videoButton:hover{
+    border: 2px solid black;
+    transition:  1s;
+    text-shadow: 1px 1px 2px black, 0 0 1em black;
+}
