@@ -4,6 +4,7 @@ const producers = [
     idPhotoGallery: 'BVS',
     name: 'Бычков Владимир Сергеевич',
     dates: '5 января 1929 — 24 апреля 2004',
+    placeOfBirth: 'Москва, СССР',
     photoUrl: 'https://upload.wikimedia.org/wikipedia/ru/thumb/3/31/%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%BC%D0%B8%D1%80_%D0%91%D1%8B%D1%87%D0%BA%D0%BE%D0%B2.jpg/749px-%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%BC%D0%B8%D1%80_%D0%91%D1%8B%D1%87%D0%BA%D0%BE%D0%B2.jpg',
     biography: [
       ['1947—1949', 'Был актёром вспомогательного состава Театра-студии киноактёра.'],
@@ -39,6 +40,7 @@ const producers = [
     idPhotoGallery: 'GSA',
     name: 'Гайдук Станислав Аркадьевич',
     dates: '10 января 1945 - 3 октября 2017',
+    placeOfBirth: 'Демешковка, БССР',
     photoUrl: 'https://upload.wikimedia.org/wikipedia/ru/3/32/%D0%A1%D1%82%D0%B0%D0%BD%D0%B8%D1%81%D0%BB%D0%B0%D0%B2_%D0%93%D0%B0%D0%B9%D0%B4%D1%83%D0%BA.jpg',
     biography: [
       ['10 января 1945', `Родился в деревне Демешковка Березинского района Минской области БССР. Детство и школьные годы прошли в деревне Черневка Борисовского района.`],
@@ -78,6 +80,7 @@ const producers = [
     idPhotoGallery: 'RVD',
     name: 'Рубинчик Валерий Давидович',
     dates: '17 апреля 1940 - 2 марта 2011',
+    placeOfBirth: 'Минск, БССР',
     photoUrl: 'https://upload.wikimedia.org/wikipedia/ru/a/a8/Rubinchik_vd.jpg',
     biography: [
       ['1950 - 1962', `Учился в школе № 42 в Минске. Окончил три курса Белорусского театрально-художественного института в Минске.`],
@@ -115,6 +118,7 @@ const producers = [
     idPhotoGallery: 'TEN',
     name: 'Трофименко Елена Николаевна',
     dates: '20 марта 1964 - наст.',
+    placeOfBirth: 'Минск, БССР',
     photoUrl: 'https://upload.wikimedia.org/wikipedia/commons/8/83/Yelena_Trofimenko_%28Nov._2011%29_INet_%282%29.jpg',
     biography: [
       ['1982 - 1989', 'Работала на Белорусском телевидении и сняла, как автор и режиссёр, несколько фильмов.'],
@@ -148,6 +152,7 @@ const producers = [
     idPhotoGallery: 'KAV',
     name: 'Курейчик Андрей Владимирович',
     dates: '14 января 1980 - наст.',
+    placeOfBirth: 'Минск, Беларусь',
     photoUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Kureichik.jpg/267px-Kureichik.jpg',
     biography: [
       ['1992', 'В юности был чемпионом Минска по у-шу(тренер — отец). Закончил лицей Белорусского государственного университета.'],

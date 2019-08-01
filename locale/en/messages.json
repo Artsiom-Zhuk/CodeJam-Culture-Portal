@@ -144,5 +144,12 @@
   "...которая сделала это возможным":"... that made it possible",
   "Карта":"Map",
   "Галерея":"Gallery",
-  "Биография":"Biography"
+  "Биография":"Biography",
+  "Место рождения":"Birthplace",
+  "Москва, СССР":"Moscow, USSR",
+  "Демешковка, БССР":"Demeshkovka, BSSR",
+  "Минск, БССР":"Minsk, BSSR",
+  "Минск, Беларусь":"Minsk, Belarus",
+  "Введите имя или место рождения режиссера":"Enter director’s name or place of birth"
+
 }
