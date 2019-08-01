@@ -22,13 +22,31 @@ const ProducerPage = (props) => {
     <Translation>
       {t => (
       <Layout>
-        <h2>{t(producer.name)}</h2>
-        <VideoWidget videoId = {videoUrl}/>
+        <Container maxWidth='sm'>
+          <img 
+            src={photoUrl}
+            style={{
+              display: 'block',
+              margin: '0 auto',
+              width: '80%'
+            }}
+          ></img>
+        </Container>
+        
+        <Typography gutterBottom variant="h4" align='center'>{t(producer.name)}</Typography>
+        <Typography gutterBottom variant="subtitle1" align='center'>{t(producer.dates)}</Typography>
+
         <TimeLineFull producer = { producer }/>
-        <GeoWidget mapPoints = {mapPoints}/>
-        <PhotosGallery producer = { producer }/>
-        <VideoWidget videoId = {videoUrl}/>
-        <GeoWidget mapPoints = {mapPoints}/>
+
+        <Container maxWidth='md'>
+          <Typography gutterBottom variant="h4" align='center' style={{margin: '2% auto'}}>{'YouTube'}</Typography>
+          <VideoWidget videoId = {videoUrl}/>
+          <Typography gutterBottom variant="h4" align='center' style={{margin: '2% auto'}}>{t('Галерея')}</Typography>
+          <PhotosGallery producer = { producer }/>
+          <Typography gutterBottom variant="h4" align='center' style={{margin: '2% auto'}}>{t('Карта')}</Typography>
+          <GeoWidget mapPoints = {mapPoints}/>
+        </Container>
+
       </Layout>
        )}
     </Translation>
