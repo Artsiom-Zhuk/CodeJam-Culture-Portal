@@ -33,7 +33,7 @@ const ProducerPage = (props) => {
           ></img>
         </Container>
         
-        <Typography gutterBottom variant="h4" align='center'>{t(producer.name)}</Typography>
+        <Typography gutterBottom variant="h4" align='center' style={{marginTop: '1%'}}>{t(producer.name)}</Typography>
         <Typography gutterBottom variant="subtitle1" align='center'>{t(producer.dates)}</Typography>
 
         <Typography gutterBottom variant="h4" align='center' style={{marginTop: '2%', marginBottom: '0'}}>{t('Биография')}</Typography>
