@@ -36,14 +36,15 @@ const ProducerPage = (props) => {
         <Typography gutterBottom variant="h4" align='center'>{t(producer.name)}</Typography>
         <Typography gutterBottom variant="subtitle1" align='center'>{t(producer.dates)}</Typography>
 
+        <Typography gutterBottom variant="h4" align='center' style={{marginTop: '2%', marginBottom: '0'}}>{t('Биография')}</Typography>
         <TimeLineFull producer = { producer }/>
 
         <Container maxWidth='md'>
-          <Typography gutterBottom variant="h4" align='center' style={{margin: '2% auto'}}>{'YouTube'}</Typography>
+          <Typography gutterBottom variant="h4" align='center' style={{margin: '2%'}}>{'YouTube'}</Typography>
           <VideoWidget videoId = {videoUrl}/>
-          <Typography gutterBottom variant="h4" align='center' style={{margin: '2% auto'}}>{t('Галерея')}</Typography>
+          <Typography gutterBottom variant="h4" align='center' style={{marginTop: '5%'}}>{t('Галерея')}</Typography>
           <PhotosGallery producer = { producer }/>
-          <Typography gutterBottom variant="h4" align='center' style={{margin: '2% auto'}}>{t('Карта')}</Typography>
+          <Typography gutterBottom variant="h4" align='center' style={{marginTop: '5%'}}>{t('Карта')}</Typography>
           <GeoWidget mapPoints = {mapPoints}/>
         </Container>
 
