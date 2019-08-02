@@ -9,25 +9,29 @@ const title = "Наша команда";
 const description = "...которая сделала это возможным";
 
 export const Developers = () => (
-  <div className="team-section">
+  
   <Translation>
     {t => (
-      <>
-        <h3 className="team-title">{t(title)}</h3>
-        <p className="team-description">{t(description)}</p>
-        <div className="developers-container">  
-          {developersList.map(item => (
-            <div className="developers-item">  
-              <DeveloperItem 
-                name={item.name}
-                image={item.photoUrl}
-                github={item.github}
-                githubName={item.githubName}
-              />    
-            </div>))}
+      <section className="developers">
+        <div class="card">
+          <div class="card-header">
+            <h2>{t('Разработчики')}</h2>
+          </div>
+          <div class="card-body">
+            <div className="row justify-content-center">  
+            {developersList.map(item => (
+              <div className=" col-md-4">  
+                <DeveloperItem 
+                  name={item.name}
+                  image={item.photoUrl}
+                  github={item.github}
+                  githubName={item.githubName}
+                />    
+              </div>))}
+           </div>
+          </div>
         </div>
-      </>
+      </section>
     )}
   </Translation>
-  </div>
 );

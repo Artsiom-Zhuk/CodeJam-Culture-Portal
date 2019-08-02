@@ -13,7 +13,7 @@ import Container from '@material-ui/core/Container';
 import { maxHeight } from '@material-ui/system';
 
 const ProducerPage = (props) => {
-  const id= (props.location.state.id ? props.location.state.id: 0);
+  const id=((props.location.state !== null)&&(props.location.state.id !== null)) ? props.location.state.id: 0;
   const producer = producers[id];
   const mapPoints = producers[id].mapPoints||[[55.75, 37.57]];
   const videoUrl = producers[id].videoUrl.slice(32,);

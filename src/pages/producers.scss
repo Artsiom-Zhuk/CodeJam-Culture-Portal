@@ -1,50 +1,14 @@
-.select-director-page {
+.card {
+    min-height: 320px;
+}
+.c-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-    &__container-input-field {
-        display: flex;
-        width: 80vw;
-        max-width: 500px;
-        height: 30px;
-        margin:  0 auto 50px;
-        border:  1px solid black;
-        border-radius: 5px;
-
-    }
-
-    &__container-icon {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 70px;
-
-        &:after {
-            content: "";
-            position: absolute;
-            display: block;
-            width: 1px;
-            height: 50%;
-            top: 25%;
-            left: 100%;
-            background-color: black;
-        }
-    }
-
-    &__icon {
-        max-width: 30%;
-        height: auto;
-    }
-
-    &__input-field {
-        display: flex;
-        flex: 1;
-        margin-right: 5px;
-        padding: 0 0 0 20px;
-        border: none;
-        
-        &:active,
-        &:focus {
-            outline: none;
-        }
-    }
+.c-center img{
+    margin: 10px;
+    border-radius: 5px;
 }
