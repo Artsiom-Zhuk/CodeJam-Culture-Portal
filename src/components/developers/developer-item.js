@@ -1,17 +1,14 @@
 import React from 'react';
-
+import { Link } from "gatsby";
 import ImageAvatars from './developer-image';
 import "./developers.scss"
 
 export const DeveloperItem = (props) => (
-  <>
-    <div className="developers-img">
+  <div className="d-flex align-self-center">
     <ImageAvatars src={props.image} />
-    </div>
     <div className="developers-info">
-      <h3 className="developers-name">{props.name}</h3>
+      {props.name}
       <div>
-        <span className="github-logo"></span>
         <a className="github-link"
           href={props.github} 
           target="_blank"> 
@@ -19,5 +16,5 @@ export const DeveloperItem = (props) => (
         </a>
       </div>
     </div>    
-  </>
+  </div>
 );

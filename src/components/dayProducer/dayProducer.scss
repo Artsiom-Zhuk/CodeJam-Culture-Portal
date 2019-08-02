@@ -1,9 +1,5 @@
-
 .dayProducer {
-  height: 21vmax;
-  width: 30vmax;
-  display: flex;
-  margin: 0 auto 0 auto;
+ 
 
   &_link {
     &__image {
@@ -24,18 +20,7 @@
   }
 
 }
-
-.dayProducer:hover {
-  .dayProducer_bio {
-    opacity: 100;
-    display: block;
-    transition-duration: .9s ;
-  }
-
-  .dayProducer_link__image {
-    transition-duration: .2s;
-    border-radius: 50%;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  }
-
+.main-card {
+  padding: 10px;
+  margin-bottom: 20px;
 }

@@ -7,16 +7,13 @@ const useStyles = makeStyles({
     margin: 10,
   },
   bigAvatar: {
-    margin: "0.2rem",
-    marginBottom: "0rem",
-    width: "5rem",
-    height: "5rem",
+    
   },
 });
 
 export default function ImageAvatars(props) {
   const classes = useStyles();
   return (    
-    <Avatar alt="faf" src={props.src} className={classes.bigAvatar} />
+    <Avatar alt="faf" src={props.src} />
   );
 }

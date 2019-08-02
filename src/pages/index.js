@@ -4,13 +4,12 @@ import { withI18next } from '@wapps/gatsby-plugin-i18next';
 import DayProducer from '../components/dayProducer/dayProducer';
 import Layout from "../components/layout/layout"
 import { Developers } from '../components/developers'
-import '../styles/main.scss';
+
 
 const IndexPage = () => (
   <Translation>
     {t => (
         <Layout>
-          <h2>{t('Главная страница')}</h2>
           <DayProducer/>
           <Developers/>
         </Layout>
@@ -27,11 +26,3 @@ export const query = graphql`
     }
   }
 `;
-
-        // {/* <h1>{t('Film directors of Belarus')}</h1>
-        // <p>{t('Welcome to your new Gatsby site.')}</p>
-        // <p>{t('Now go build something great.')}</p>
-        // <Link to="/page-2/">{t('Go to page 2')}</Link>
-        // <Link to="/timeline-example/">{t(' Timeline')}</Link>
-        // <iframe src='https://yandex.ru/map-widget/v1/?um=constructor%3Aca0787145253f3a3b70dcdfab8a861be037dc6d387c377b30882bd86d3d807b5&amp;source=constructor' width='100%' height='400' frameborder='0'></iframe>
-        // <a href="https://www.youtube.com/watch?v=9FZehV2qJTk" data-lity="data-lity">1</a> */}
