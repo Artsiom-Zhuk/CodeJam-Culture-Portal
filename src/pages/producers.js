@@ -17,7 +17,7 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import { Container } from '@material-ui/core';
 
-import searchIcons from '../../public/icons/search-icon.png'
+import searchIcons from '../icons/search.svg'
 
 import { placeholderForInputSearch } from './constants';
 
