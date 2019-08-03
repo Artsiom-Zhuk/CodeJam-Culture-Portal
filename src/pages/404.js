@@ -1,12 +1,16 @@
 import React from "react"
-
+import { Translation } from 'react-i18next';
 import Layout from "../components/layout/layout"
 
 const NotFoundPage = () => (
-  <Layout>
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-  </Layout>
+  <Translation>
+    {t => (
+      <Layout>
+        <h1>{t('НЕ НАЙДЕНО')}</h1>
+        <p>{t('Вы просто попали на маршрут, который не существует ... грусть.')}</p>
+      </Layout>
+    )}
+  </Translation>
 )
 
 export default NotFoundPage
