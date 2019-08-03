@@ -2,6 +2,7 @@ import React from 'react';
 import ModalVideo from 'react-modal-video';
 import { Translation } from 'react-i18next';
 import { video } from '../../data/constants-page-data';
+import PropTypes from 'prop-types';
 import './videoWidget.scss';
 
 export default class VideoWidget extends React.Component {
@@ -32,3 +33,7 @@ export default class VideoWidget extends React.Component {
     )
   }
 }
+
+VideoWidget.propTypes = {
+  videoId: PropTypes.string,
+};
