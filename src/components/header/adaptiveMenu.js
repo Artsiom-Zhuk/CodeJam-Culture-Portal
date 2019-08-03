@@ -9,14 +9,6 @@ export default function AdaptiveMenu() {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
 
-  const styleLink ={
-    root: {
-      textDecoration: 'none',
-      color: 'black',
-    },
-
-  }
-
   function handleClick(event) {
     setAnchorEl(event.currentTarget);
   }
@@ -38,16 +30,16 @@ export default function AdaptiveMenu() {
         onClose={handleClose}
         TransitionComponent={Fade}
       >
-         <Link className='adaptive-menu-link' to="/">
-        <MenuItem onClick={handleClose}>
-         На главную
+        <Link className='adaptive-menu-link' to="/">
+          <MenuItem onClick={handleClose}>
+            На главную
         </MenuItem>
         </Link>
         <Link className='adaptive-menu-link' to="/producers">
-        <MenuItem onClick={handleClose} >
-          К списку режиссёров</MenuItem>
-           </Link>
-          </Menu>
-        </div >
-        );
+          <MenuItem onClick={handleClose} >
+            К списку режиссёров</MenuItem>
+        </Link>
+      </Menu>
+    </div >
+  );
 }

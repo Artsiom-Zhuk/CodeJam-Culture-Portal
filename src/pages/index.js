@@ -10,7 +10,7 @@ import { graphql } from 'gatsby';
 const IndexPage = () => (
   <Translation>
     {t => (
-      <Layout>
+      <Layout t={t}>
         <DayProducer t={t} />
         <Developers t={t} />
       </Layout>

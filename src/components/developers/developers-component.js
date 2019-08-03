@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import "./developers.scss"
 import { DeveloperItem } from "./developer-item"
 import { developersList } from '../../data/developers-data';
-import { developers } from '../../pages/constants';
+import { developers } from '../../data/constants';
 
 export const Developers = ({ t }) => (
   <section className="developers">
