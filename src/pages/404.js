@@ -8,8 +8,8 @@ const NotFoundPage = () => (
   <Translation>
     {t => (
       <Layout t={t}>
-        <h1>{t('NOT FOUND')}</h1>
-        <p>{t('You just hit a route that doesn&#39;t exist... the sadness.')}</p>
+        <h1>{t('НЕ НАЙДЕНО')}</h1>
+        <p>{t('Вы просто попали на маршрут, который не существует ... грусть.')}</p>
       </Layout>
     )}
   </Translation>

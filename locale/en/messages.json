@@ -163,5 +163,7 @@
   "К списку режиссёров": "To the list of directors",
   "рус": "ru",
   "бел": "by",
-  "англ": "en"
+  "англ": "en",
+  "НЕ НАЙДЕНО": "NOT FOUND",
+  "Вы просто попали на маршрут, который не существует ... грусть.": "You just hit a route that doesn't exist... the sadness."
 }
