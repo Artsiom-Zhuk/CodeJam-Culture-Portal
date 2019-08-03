@@ -1,13 +1,11 @@
 import React from 'react';
 import { Translation } from 'react-i18next';
 
-import "./developers.scss"
-import { DeveloperItem } from "./developer-item"
+import "./developers.scss";
+import { DeveloperItem } from "./developer-item";
 import { developersList } from '../../data/developers-data';
-import { developers } from '../../pages/constants';
+import { developers } from '../../data/constants-page-data';
 
-const title = "Наша команда";
-const description = "...которая сделала это возможным";
 
 export const Developers = () => (
 

@@ -1,10 +1,10 @@
 import PropTypes from "prop-types"
 import { Translation } from 'react-i18next';
-import React from "react"
+import React from "react";
 import { Link } from '@wapps/gatsby-plugin-i18next';
 import Switcher from './../switcher/switcher';
-import { home, searchProducers } from '../../pages/constants';
-import './header.css'
+import { home, searchProducers } from '../../data/constants-page-data';
+import './header.css';
 
 const Header = ({ siteTitle }) => (
   <header>

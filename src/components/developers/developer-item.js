@@ -1,7 +1,6 @@
 import React from 'react';
-import { Link } from "gatsby";
 import ImageAvatars from './developer-image';
-import "./developers.scss"
+import "./developers.scss";
 
 export const DeveloperItem = (props) => (
   <div className="d-flex align-self-center">

@@ -1,7 +1,7 @@
 import React from 'react';
 import ModalVideo from 'react-modal-video';
 import { Translation } from 'react-i18next';
-import { video } from '../../pages/constants';
+import { video } from '../../data/constants-page-data';
 import './videoWidget.scss';
 
 export default class VideoWidget extends React.Component {

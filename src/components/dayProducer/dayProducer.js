@@ -2,7 +2,7 @@ import React from "react";
 import producers from "../../data/producers";
 import { Translation } from 'react-i18next';
 import { Link } from '@wapps/gatsby-plugin-i18next';
-import { continueReading } from '../../pages/constants';
+import { continueReading } from '../../data/constants-page-data';
 import "./dayProducer.scss";
 
 function DayProducer() {
