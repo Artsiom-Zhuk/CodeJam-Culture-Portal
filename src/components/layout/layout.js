@@ -19,16 +19,16 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-        <main>
-          <div className="container">
-            {children}
-          </div>
-        </main>
-        <footer class="footer">
-          <div class="container text-center">
-            <span class="text-muted">The Rolling Scopes School, 2019</span>
-          </div>
-        </footer>
+      <main>
+        <div className="container">
+          {children}
+        </div>
+      </main>
+      <footer className="footer">
+        <div className="container text-center">
+          <span className="text-muted">The Rolling Scopes School, 2019</span>
+        </div>
+      </footer>
     </>
   )
 }
