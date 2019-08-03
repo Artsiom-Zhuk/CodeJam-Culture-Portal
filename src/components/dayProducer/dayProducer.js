@@ -1,7 +1,7 @@
 import React from "react";
 import producers from "../../data/producers";
 import { Link } from '@wapps/gatsby-plugin-i18next';
-import { continueReading } from '../../pages/constants';
+import { continueReading } from '../../data/constants';
 import PropTypes from 'prop-types';
 import "./dayProducer.scss";
 

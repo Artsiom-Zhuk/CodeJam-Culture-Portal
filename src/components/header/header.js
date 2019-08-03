@@ -1,33 +1,31 @@
 import PropTypes from "prop-types"
 import React, { Component } from "react"
-import { Translation } from 'react-i18next';
-import { Link } from '@wapps/gatsby-plugin-i18next';
-import Switcher from './../switcher/switcher';
-import './header.css';
 import Languages from './languages';
 import Navigation from './navigation';
 import Icon from './icon';
-// import Switcher from './../switcher/switcher';
 import AdaptiveMenu from './adaptiveMenu';
-import { culturalPortal } from '../../pages/constants';
+import { culturalPortal } from '../../data/constants';
+import './header.css';
+
+const windowGlobal = typeof window !== 'undefined' && window;
 
 class Header extends Component {
 
   state = {
-    currentWidth: window.innerWidth,
+     currentWidth: windowGlobal.innerWidth,
   }
 
   componentDidMount() {
-    window.addEventListener('resize', this.resize);
+    windowGlobal.addEventListener('resize', this.resize);
   }
 
   componentWillUnmount() {
-    window.removeEventListener('resize', this.resize);
+    windowGlobal.removeEventListener('resize', this.resize);
   }
 
   resize = () => {
     this.setState({
-      currentWidth: window.innerWidth,
+      currentWidth: windowGlobal.innerWidth,
     })
   }
 
@@ -35,29 +33,26 @@ class Header extends Component {
     const isMobile = this.state.currentWidth < 420;
     return (
       <header>
-        <Translation>
-          {t => (
-            <div className='navMainCont'>
-              <div className='leftPart'>
-                <Icon />
-                <h1 className="title">
-                  {t(culturalPortal)}
-                </h1>
-              </div>
-              <div className='navBar'>
-                <Languages />
-                {isMobile ? <AdaptiveMenu /> : <Navigation />}
-              </div>
-            </div>
-          )}
-        </Translation>
+        <div className='navMainCont'>
+          <div className='leftPart'>
+            <Icon />
+            <h1 className="title">
+              {this.props.t(culturalPortal)}
+            </h1>
+          </div>
+          <div className='navBar'>
+            <Languages t={this.props.t} />
+            {isMobile ? <AdaptiveMenu /> : <Navigation />}
+          </div>
+        </div>
       </header>
     )
   }
-
 }
-
 
 export default Header
 
+Header.propTypes = {
+  t: PropTypes.func.isRequired,
+};
 

@@ -2,11 +2,8 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Translation } from 'react-i18next';
 import Button from '@material-ui/core/Button';
-import grey from '@material-ui/core/colors/grey';
-import Switcher from './../switcher/switcher';
 import { Link } from '@wapps/gatsby-plugin-i18next';
-import { toMain, toDirectorsList } from '../../pages/constants';
-
+import { toMain, toDirectorsList } from '../../data/constants';
 
 const useStyles = makeStyles(theme => ({
   button: {
@@ -17,10 +14,6 @@ const useStyles = makeStyles(theme => ({
     display: 'none',
   },
 }));
-
-function goToDirectorPage() {
-  // to="/selectDirectorPage/selectDirectorPage">{('Select Director Page')
-}
 
 export default function Navigation() {
   const classes = useStyles();
@@ -34,7 +27,7 @@ export default function Navigation() {
             <Link to="/">
               <Button variant="contained" color="grey" className={classes.button}>
                 {t(toMain)}
-        </Button>
+              </Button>
             </Link>
 
           </>
@@ -46,7 +39,7 @@ export default function Navigation() {
                 className={classes.button}
               >
                 {t(toDirectorsList)}
-      </Button>
+              </Button>
             </Link>
           </>
 
