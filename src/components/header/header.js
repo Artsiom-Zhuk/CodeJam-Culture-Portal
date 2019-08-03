@@ -1,40 +1,58 @@
-import { Translation } from 'react-i18next';
-import React from "react"
-import { Link } from '@wapps/gatsby-plugin-i18next';
-import Switcher from './../switcher/switcher';
-import { home, searchProducers } from '../../data/constants';
-import './header.css'
+import PropTypes from "prop-types"
+import React, { Component } from "react"
+import Languages from './languages';
+import Navigation from './navigation';
+import Icon from './icon';
+import AdaptiveMenu from './adaptiveMenu';
+import { culturalPortal } from '../../data/constants';
+import './header.css';
 
-const Header = () => (
-  <header>
-    <Translation>
-      {t => (
-        <nav className="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-          <div className="container">
-            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-              <span className="navbar-toggler-icon"></span>
-            </button>
+const windowGlobal = typeof window !== 'undefined' && window;
 
-            <div className="collapse navbar-collapse" id="navbarsExampleDefault">
-              <ul className="navbar-nav mr-auto">
-                <li className="nav-item ">
-                  <Link to="/" className="nav-link" activeClassName="active">{t(home)}</Link>
-                </li>
-                <li className="nav-item">
+class Header extends Component {
 
-                  <Link to="/producers" className="nav-link" activeClassName="active">{t(searchProducers)}</Link>
-                  {/* <Link to="/producers" className="nav-link" activeClassName="active">{('Search producers')}</Link> */}
-                </li>
-              </ul>
-              <Switcher />
+  state = {
+     currentWidth: windowGlobal.innerWidth,
+  }
 
-            </div>
+  componentDidMount() {
+    windowGlobal.addEventListener('resize', this.resize);
+  }
+
+  componentWillUnmount() {
+    windowGlobal.removeEventListener('resize', this.resize);
+  }
+
+  resize = () => {
+    this.setState({
+      currentWidth: windowGlobal.innerWidth,
+    })
+  }
+
+  render() {
+    const isMobile = this.state.currentWidth < 420;
+    return (
+      <header>
+        <div className='navMainCont'>
+          <div className='leftPart'>
+            <Icon />
+            <h1 className="title">
+              {this.props.t(culturalPortal)}
+            </h1>
           </div>
-        </nav>
-
-      )}
-    </Translation>
-  </header>
-)
+          <div className='navBar'>
+            <Languages t={this.props.t} />
+            {isMobile ? <AdaptiveMenu /> : <Navigation />}
+          </div>
+        </div>
+      </header>
+    )
+  }
+}
 
 export default Header
+
+Header.propTypes = {
+  t: PropTypes.func.isRequired,
+};
+

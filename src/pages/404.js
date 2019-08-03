@@ -7,7 +7,7 @@ import { graphql } from 'gatsby';
 const NotFoundPage = () => (
   <Translation>
     {t => (
-      <Layout>
+      <Layout t={t}>
         <h1>{t('NOT FOUND')}</h1>
         <p>{t('You just hit a route that doesn&#39;t exist... the sadness.')}</p>
       </Layout>

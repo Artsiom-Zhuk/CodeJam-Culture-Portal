@@ -7,4 +7,9 @@ export const yearsOfLife = "Года жизни";
 export const continueReading = "Продолжить чтение";
 export const developers = "Разработчики";
 export const video = "Видео";
-
+export const culturalPortal = "Культурный портал";
+export const toMain = "На главную";
+export const toDirectorsList = "К списку режиссёров";
+export const ru = "рус";
+export const by = "бел";
+export const eng = "англ";

@@ -21,7 +21,7 @@ const ProducerPage = (props) => {
   return (
     <Translation>
       {t => (
-        <Layout>
+        <Layout t={t}>
           <Container maxWidth='sm'>
             <img
               src={photoUrl}

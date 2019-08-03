@@ -1,26 +1,106 @@
-body{
-    margin:0
+body {
+  margin: 0
 }
+
+.icon{
+  width: 70px;
+  height: 70px;
+  margin-top: 5px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
 .navBar {
-    width: 60%;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .navBar a {
-      color: #686868;
-      text-decoration: none;
-  }
-  .navBar a:hover {
-    color: #1daeec;
-    transition: all 0.3s
-  }
-  .navMainCont{    
-    background: #333333;
-    display: flex;
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navBar a {
+  color: #686868;
+  text-decoration: none;
+}
+
+.navBar a:hover {
+  color: lightgrey;
+  transition: all 0.3s
+}
+
+.navMainCont {
+  display: flex;
+  width: 100%;
+  background: #333333;
+  display: flex;
+}
+
+.navigation-buttons{
+  margin-right: 20px;
+}
+
+.leftPart {
+  display: flex;
+  width: 50%;
+}
+
+.active-lang{
+  color: silver !important;
+}
+
+h1 {
+  color: gainsboro;
+}
+
+.active-language {
+  color: silver !important;
+}
+
+.adaptive-menu{
+  background-color: #686868;
+  border-radius: 10px;
+  margin-left: 5%
+}
+
+.adaptive-menu-link{
+  text-decoration: none;
+  color: black;
+}
+
+@media screen and (max-width: 971px) {
+  .navMainCont {
+    flex-direction: column;
   }
 
-h1{
-    color: white;
+  .navBar {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .leftPart {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .navMainCont {
+    flex-direction: column;
+  }
+
+  .navBar {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .leftPart {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+  }
+
+  .title {
+    font-size: 24px;
+  }
 }
