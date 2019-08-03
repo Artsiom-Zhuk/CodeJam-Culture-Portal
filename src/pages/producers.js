@@ -39,8 +39,8 @@ const SelectDirectorPage = () => {
                         <p className="mb-auto">{`${t(titlePlaceOfBirth)}: ${t(item.placeOfBirth)}`}</p>
                         <Link to={`/producer/`} state={{ id: index }} className="btn btn-outline-info">{t(showMore)}</Link>
                       </div>
-                      <div class="col-auto c-center">
-                        <img src={item.photoUrl} class="" width="200" alt={t(item.name)} />
+                      <div className="col-auto c-center">
+                        <img src={item.photoUrl} className="" width="200" alt={t(item.name)} />
                       </div>
                     </div>
                   </div>
@@ -57,9 +57,9 @@ const SelectDirectorPage = () => {
 export default withI18next()(SelectDirectorPage);
 
 export const query = graphql`
-query($lng: String!) {
-locales: allLocale(filter: { lng: { eq: $lng }, ns: { eq: "messages" } }) {
-...LocaleFragment
-}
-}
+  query($lng: String!) {
+    locales: allLocale(filter: { lng: { eq: $lng }, ns: { eq: "messages" } }) {
+      ...LocaleFragment
+    }
+  }
 `;
