@@ -21,8 +21,8 @@ class Languages extends Component {
       <Translation>
         {t => (
           <Breadcrumbs aria-label="breadcrumb">
-            <li><Link to={"/ru/".concat(url)} state={{ id: id }} activeClassName="active-language">{t(by)} </Link></li>
-            <li><Link to={"/by/".concat(url)} state={{ id: id }} activeClassName="active-language">{t(ru)} </Link></li>
+            <li><Link to={"/ru/".concat(url)} state={{ id: id }} activeClassName="active-language">{t(ru)} </Link></li>
+            <li><Link to={"/by/".concat(url)} state={{ id: id }} activeClassName="active-language">{t(by)} </Link></li>
             <li><Link to={"/en/".concat(url)} state={{ id: id }} activeClassName="active-language">{t(eng)} </Link></li>
           </Breadcrumbs>
         )}
