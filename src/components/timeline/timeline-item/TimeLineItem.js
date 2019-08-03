@@ -1,36 +1,28 @@
 import React from 'react';
-import { TimelineItem }  from 'vertical-timeline-component-for-react';
-import { Translation } from 'react-i18next';
-import { withI18next } from '@wapps/gatsby-plugin-i18next';
+import { TimelineItem } from 'vertical-timeline-component-for-react';
+import PropTypes from 'prop-types';
 import './TimeLineItem.scss';
 
-const TimeItem = ({ biography }) => {
+const TimeItem = ({ biography, t }) => {
   const elements = biography.map((item, index) => {
     return (
-      <Translation>
-        { t => (
-        <TimelineItem key={ index } dateText={ item[0] } >
-          <h3>{item[0] }</h3>
-          <p>{t(item[1]) }</p>
-        </TimelineItem>
-        )}
-     </Translation>
+      <TimelineItem key={index} dateText={item[0]} >
+        <h3>{item[0]}</h3>
+        <p>{t(item[1])}</p>
+      </TimelineItem>
     )
   });
 
   return (
     <div>
-      { elements }
+      {elements}
     </div>
   );
 };
 
 export default TimeItem
 
-export const query = graphql`
-  query($lng: String!) {
-    locales: allLocale(filter: { lng: { eq: $lng }, ns: { eq: "messages" } }) {
-      ...LocaleFragment
-    }
-  }
-`;
+TimeItem.propTypes = {
+  t: PropTypes.func.isRequired,
+  biography: PropTypes.array
+};

@@ -4,16 +4,17 @@ import { withI18next } from '@wapps/gatsby-plugin-i18next';
 import DayProducer from '../components/dayProducer/dayProducer';
 import Layout from "../components/layout/layout"
 import { Developers } from '../components/developers'
+import { graphql } from 'gatsby';
 
 
 const IndexPage = () => (
   <Translation>
     {t => (
-        <Layout>
-          <DayProducer/>
-          <Developers/>
-        </Layout>
-    )}    
+      <Layout>
+        <DayProducer t={t} />
+        <Developers t={t} />
+      </Layout>
+    )}
   </Translation>
 );
 

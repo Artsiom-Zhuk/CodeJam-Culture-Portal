@@ -1,38 +1,34 @@
 import React from 'react';
-import { Translation } from 'react-i18next';
+import PropTypes from 'prop-types';
 
 import "./developers.scss"
 import { DeveloperItem } from "./developer-item"
 import { developersList } from '../../data/developers-data';
 import { developers } from '../../pages/constants';
 
-const title = "Наша команда";
-const description = "...которая сделала это возможным";
-
-export const Developers = () => (
-
-  <Translation>
-    {t => (
-      <section className="developers">
-        <div class="card">
-          <div class="card-header">
-            <h2>{t(developers)}</h2>
-          </div>
-          <div class="card-body">
-            <div className="row justify-content-center">
-              {developersList.map(item => (
-                <div className=" col-md-4">
-                  <DeveloperItem
-                    name={item.name}
-                    image={item.photoUrl}
-                    github={item.github}
-                    githubName={item.githubName}
-                  />
-                </div>))}
-            </div>
-          </div>
+export const Developers = ({ t }) => (
+  <section className="developers">
+    <div className="card">
+      <div className="card-header">
+        <h2>{t(developers)}</h2>
+      </div>
+      <div className="card-body">
+        <div className="row justify-content-center">
+          {developersList.map((item, i) => (
+            <div key={i} className=" col-md-4">
+              <DeveloperItem
+                name={item.name}
+                image={item.photoUrl}
+                github={item.github}
+                githubName={item.githubName}
+              />
+            </div>))}
         </div>
-      </section>
-    )}
-  </Translation>
+      </div>
+    </div>
+  </section>
 );
+
+Developers.propTypes = {
+  t: PropTypes.func.isRequired,
+};
