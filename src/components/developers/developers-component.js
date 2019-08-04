@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import "./developers.scss"
-import { DeveloperItem } from "./developer-item"
+import { DeveloperItem } from "./developer-item";
 import { developersList } from '../../data/developers-data';
 import { developers } from '../../data/constants';
 
