@@ -12,7 +12,7 @@ class Switcher extends Component {
   render() {
     const { location } = this.props;
     const url = location.pathname.split('/').slice(2).join('/');
-    const id = ((location.state !== null) && (location.state.id !== null)) ? location.state.id : 0;
+    const id = ((location.state) && (location.state.id !== null)) ? location.state.id : 0;
 
     return (
       <ul className="navbar-nav">

@@ -2,7 +2,7 @@ import { Translation } from 'react-i18next';
 import React from "react"
 import { Link } from '@wapps/gatsby-plugin-i18next';
 import Switcher from './../switcher/switcher';
-import { home, searchProducers } from '../../pages/constants';
+import { home, searchProducers } from '../../data/constants';
 import './header.css'
 
 const Header = () => (

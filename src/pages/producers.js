@@ -5,8 +5,8 @@ import { withI18next } from '@wapps/gatsby-plugin-i18next';
 import producers from '../data/producers';
 import { Link } from '@wapps/gatsby-plugin-i18next';
 import Layout from "../components/layout/layout";
-import { titlePlaceOfBirth } from './constants';
-import { placeholderForInputSearch, searchProducers, showMore, yearsOfLife } from './constants';
+import { titlePlaceOfBirth } from '../data/constants';
+import { placeholderForInputSearch, searchProducers, showMore, yearsOfLife } from '../data/constants';
 import './producers.scss';
 const blockname = 'select-director-page';
 const SelectDirectorPage = () => {

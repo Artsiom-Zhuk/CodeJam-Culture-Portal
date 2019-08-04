@@ -1,4 +1,4 @@
-import { INFO_FOR_PHOTOS_IN_GALLERY as INFO} from './constants'
+import { INFO_FOR_PHOTOS_IN_GALLERY as INFO} from './gallery'
 
 export const photosForGallery = {
   BVS: [
@@ -211,7 +211,7 @@ export const photosForGallery = {
       width: 3,
       height: 4,
       title: INFO.TEN.film
-     
+
     }
   ],
   KAV: [
@@ -270,4 +270,4 @@ export const photosForGallery = {
       title: INFO.KAV.film
     }
   ],
-} 
+}
