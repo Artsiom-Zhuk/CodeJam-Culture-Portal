@@ -3,7 +3,7 @@
 
   &_link {
     &__image {
-      margin-right: 50px;
+      margin: 20px auto 0 auto;
       transition-duration: .2s;
       height: 20vmax;
       width: 20vmax;
@@ -26,7 +26,5 @@
 }
 
 .producer-of-the-day{
-  font-weight: 700;
-  font-size: 44px;
-  margin-top: 0;
+  font-weight: bold;
 }
