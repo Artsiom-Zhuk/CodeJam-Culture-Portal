@@ -11,7 +11,7 @@ import GeoWidget from '../components/geoWidget/geoWidget';
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 import PropTypes from 'prop-types';
-import Worklist from '../components/work-list/work-list'
+import Worklist from '../components/work-list/work-list';
 
 const ProducerPage = (props) => {
   const id = ((props.location.state) && (props.location.state.id)) ? props.location.state.id : 0;
