@@ -13,6 +13,7 @@ function DayProducer({ t }) {
     <div className="card flex-md-row main-card ">
       <img className="dayProducer_link__image" src={producers[ID].photoUrl} alt='ProducerOfTheDay' />
       <div className="card-body d-flex flex-column align-items-start">
+        <h2 className="producer-of-the-day">{t('Режиссёр дня')}</h2>
         <h2 className="mb-0">
           {t(producers[ID].name)}
         </h2>
