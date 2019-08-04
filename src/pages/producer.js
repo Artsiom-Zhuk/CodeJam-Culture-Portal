@@ -11,6 +11,7 @@ import GeoWidget from '../components/geoWidget/geoWidget';
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 import PropTypes from 'prop-types';
+import Worklist from '../components/work-list/work-list';
 
 const ProducerPage = (props) => {
   const id = ((props.location.state) && (props.location.state.id)) ? props.location.state.id : 0;
@@ -36,6 +37,8 @@ const ProducerPage = (props) => {
           <Typography gutterBottom variant="subtitle1" align='center'>{t(producer.dates)}</Typography>
           <Typography gutterBottom variant="h4" align='center' style={{ marginTop: '2%', marginBottom: '0' }}>{t('Биография')}</Typography>
           <TimeLineFull producer={producer} t={t} />
+          <Typography gutterBottom variant="h4" align='center' style={{ marginTop: '0', marginBottom: '2%' }}>{t('Список работ')}</Typography>
+          <Worklist producer={producer} t={t} />
           <Container maxWidth='md'>
             <Typography gutterBottom variant="h4" align='center' style={{ margin: '2%' }}>{'YouTube'}</Typography>
             <VideoWidget videoId={videoUrl} />
