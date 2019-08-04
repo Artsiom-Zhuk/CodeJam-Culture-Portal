@@ -7,12 +7,10 @@ import { Link } from '@wapps/gatsby-plugin-i18next';
 import Layout from "../components/layout/layout";
 import { titlePlaceOfBirth } from '../data/constants';
 import { placeholderForInputSearch, searchProducers, showMore, yearsOfLife } from '../data/constants';
-import './producers.scss';
 const blockname = 'select-director-page';
 const SelectDirectorPage = () => {
   const [value, changeValue] = useState('');
   return (
-
     <Translation>
       {t => (
         <Layout t={t}>
@@ -50,7 +48,6 @@ const SelectDirectorPage = () => {
         </Layout>
       )}
     </Translation>
-
   )
 };
 

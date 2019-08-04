@@ -1,9 +1,7 @@
 .dayProducer {
-
-
   &_link {
     &__image {
-      margin: 20px auto 0 auto;
+      margin: 20px auto;
       transition-duration: .2s;
       height: 20vmax;
       width: 20vmax;
@@ -18,8 +16,8 @@
     font-size: small;
     transition: all 0.2s ease-in-out;
   }
-
 }
+
 .main-card {
   padding: 10px;
   margin-bottom: 20px;

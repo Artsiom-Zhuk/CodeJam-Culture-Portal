@@ -1,4 +1,4 @@
-import { INFO_FOR_PHOTOS_IN_GALLERY as INFO} from './gallery'
+import { INFO_FOR_PHOTOS_IN_GALLERY as INFO } from './gallery'
 
 export const photosForGallery = {
   BVS: [

@@ -6,7 +6,6 @@ import PropTypes from 'prop-types';
 import './videoWidget.scss';
 
 export default class VideoWidget extends React.Component {
-
   constructor() {
     super()
     this.state = {
