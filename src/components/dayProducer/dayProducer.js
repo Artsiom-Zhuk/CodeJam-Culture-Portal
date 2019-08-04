@@ -10,10 +10,15 @@ function DayProducer({ t }) {
   let ID;
   ID = now.getDay() % producers.length;
   return (
+    <div className="card">
+    <div className="card-header bg-transparent">
+      <h2 className="producer-of-the-day">{t('Режиссёр дня')}</h2>
+    </div>
     <div className="card flex-md-row main-card ">
+    <div className="card-body text-center">
       <img className="dayProducer_link__image" src={producers[ID].photoUrl} alt='ProducerOfTheDay' />
+      </div>
       <div className="card-body d-flex flex-column align-items-start">
-        <h2 className="producer-of-the-day">{t('Режиссёр дня')}</h2>
         <h2 className="mb-0">
           {t(producers[ID].name)}
         </h2>
@@ -25,6 +30,7 @@ function DayProducer({ t }) {
         </p>
         <Link to={`/producer/`} state={{ id: ID }} className="btn btn-outline-info"> {t(continueReading)}</Link>
       </div>
+    </div>
     </div>
   )
 }
