@@ -1,4 +1,4 @@
-# Worlkog
+# Worklog
 
 ## Victor Mitskevich
 | time spent    |feature|                                                           
@@ -76,5 +76,41 @@
 |0.5            | add worklog and self test|
 
 
+
 # Self test
+<pre>
+1. задание - https://github.com/rolling-scopes-school/tasks/blob/2018-Q3/tasks/codejam-culture-portal.md
+2. скриншот - https://imgur.com/a/vB30e5R
+3. 04-08-2019 / 04-08-2019
+4. Total
+  Maximum points - 240
+  
+  Min scope - (40/40)
+   Main page + page with a list of authors + author's page (only html); (+10)
+   Page with list of authors contains search widget; (+10)
+   Portal has two languages; (+20)
+   
+  Normal scope - (130/130)
+   Author's page contains timeline; (+10)
+   Author's page contains video overlay; (+10)
+   Author's page contains photo gallery; (+20)
+   Author's page contains map (geowidget); (+10)
+   From 10 to 40 Project is made using react (max 40 - if all widgets are done in React); (+40)
+   From 0 to 20 Design; (+20)
+   Material-ui / bootstrap is used; (+20)
+    
+  Extra scope - (50/70)
+   Confidence of the project presentation; (+10)
+   Project is made using gatsbyjs; (+30)
+   Contentful / netlify cms is used for content management; (0)
+   Portal has third language; (+10)
+    
+  Fines
+   if there are less than 5 commits from each active team member. Everyone should merge their own PRs; (0)
+   up to -50 points for violations stage2-tasks-requirements; (0)
+   if there is no worklog for team; (0)
+   too primitive (ugly for 2019) design / UX; (0)
+   
+   mark calculation: 40 + 130 + 50 = 220
+   
 
