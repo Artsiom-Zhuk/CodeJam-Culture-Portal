@@ -104,3 +104,18 @@ h1 {
     font-size: 24px;
   }
 }
+
+ul.language {
+  list-style: none;
+  margin-top: 15px;
+}
+
+ul.language li {
+  display: inline;
+  margin: 0 5px;
+}
+
+.MuiAvatar-root img {
+  width: 40px;
+  height: 40px;
+}
