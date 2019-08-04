@@ -5,13 +5,13 @@ import DayProducer from '../components/dayProducer/dayProducer';
 import Layout from "../components/layout/layout"
 import { graphql } from 'gatsby';
 import { Developers } from '../components/developers';
-import  Description  from '../components/description/description';
+import Description from '../components/description/description';
 
 const IndexPage = () => (
   <Translation>
     {t => (
       <Layout t={t}>
-        <Description t={t}/>
+        <Description t={t} />
         <DayProducer t={t} />
         <Developers t={t} />
       </Layout>

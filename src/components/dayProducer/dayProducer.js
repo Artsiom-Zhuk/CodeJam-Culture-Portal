@@ -10,28 +10,32 @@ function DayProducer({ t }) {
   let ID;
   ID = now.getDay() % producers.length;
   return (
-    <div className="card">
-    <div className="card-header bg-transparent">
-      <h2 className="producer-of-the-day">{t('Режиссёр дня')}</h2>
-    </div>
-    <div className="card flex-md-row main-card ">
-    <div className="card-body text-center">
-      <img className="dayProducer_link__image" src={producers[ID].photoUrl} alt='ProducerOfTheDay' />
+    <section className="card">
+
+
+
+
+      <div className="card-header bg-transparent">
+        <h2>{t('Режиссёр дня')}</h2>
       </div>
-      <div className="card-body d-flex flex-column align-items-start">
-        <h2 className="mb-0">
-          {t(producers[ID].name)}
-        </h2>
-        <div className="mb-1 text-muted">{t(producers[ID].dates)}</div>
-        <p className="card-text mb-auto">
-          <ul>
-            {producers[ID].workList.map((item, i) => (<li key={i}>{item[0]} - {t(item[1])}</li>))}
-          </ul>
-        </p>
-        <Link to={`/producer/`} state={{ id: ID }} className="btn btn-outline-info"> {t(continueReading)}</Link>
+      <div className="row card-body">
+        <div className="col-md-6 col-sm-12 text-center">
+          <img className="dayProducer_link__image" src={producers[ID].photoUrl} alt='ProducerOfTheDay' />
+        </div>
+        <div className="col-md-6 col-sm-12">
+          <h2 className="mb-0">
+            {t(producers[ID].name)}
+          </h2>
+          <div className="mb-1 text-muted">{t(producers[ID].dates)}</div>
+          <p className="card-text mb-auto">
+            <ul>
+              {producers[ID].workList.map((item, i) => (<li key={i}>{item[0]} - {t(item[1])}</li>))}
+            </ul>
+          </p>
+          <Link to={`/producer/`} state={{ id: ID }} className="btn btn-outline-info"> {t(continueReading)}</Link>
+        </div>
       </div>
-    </div>
-    </div>
+    </section>
   )
 }
 export default DayProducer;
