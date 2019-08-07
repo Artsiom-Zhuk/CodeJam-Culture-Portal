@@ -1,0 +1,13 @@
+@import '../../../styles/main.scss';
+
+.timeline-item-dateinner {
+  background: $primary-color;
+}
+
+.timeline:before {
+  color: $aux-color;
+}
+
+.title:before {
+  color: $aux-color; 
+}
